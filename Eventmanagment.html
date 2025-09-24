@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Event Manager</title>
+    <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+    <h1>Simple Event Manager</h1>
+    
+    <!-- Create Event Form -->
+    <div class="create-form">
+        <h2>Create New Event</h2>
+        <form id="eventForm">
+            <div class="form-group">
+                <label>Event Title:</label>
+                <input type="text" id="eventTitle" required>
+            </div>
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="date" id="eventDate" required>
+            </div>
+            <div class="form-group">
+                <label>Description:</label>
+                <textarea id="eventDescription" required></textarea>
+            </div>
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+    
+    <!-- Events List -->
+    <div class="events-list">
+        <h2>Your Events</h2>
+        <div id="eventsContainer">
+            <!-- Events will appear here -->
+        </div>
+    </div>
+<script src="Event.js"></script>
+</body>
+</html>
